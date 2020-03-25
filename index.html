@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>CodeName</title>
+</head>
+
+<body>
+    <nav class="navbar bg-dark ">
+        <h1 class="navbar-brand text-light"> Demo </h1>
+    </nav>
+
+    <div id="chat-window" class="container ">
+        <div class="d-flex justify-content-center">
+            <div class="col-6">
+                <form class="form-signin">
+                    
+                    <h1 class="h3 mb-3 font-weight-normal">Conversation</h1>
+                    <hr>
+                    
+                    <div id='output'></div>
+                    <hr>
+
+                    <div id="info"></div>
+                    
+                    <input type="text" id="name" class="form-control" placeholder="Ton Prénom" required autofocus>
+                
+                    <input type="text" id="message" class="form-control" placeholder="Ton Message" required>
+                
+                    <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Reception</h2>
+                <video controls id="receiver-video" width="100%" height="240px"></video>
+                <p>
+                    <button id="start" class='btn btn-success'>Démarrer la conversation</button>
+                </p>
+                <textarea id="offer" class="form-control"></textarea>
+
+            </div>
+            <div class="col-sm-6">
+                <h2>Emission</h2>
+                <video controls id="emitter-video" width="100%" height="240px"></video>
+                <form id="incoming">
+                    <div class="form-group">
+                        <textarea id="formText" class="form-control"></textarea>
+                    </div>
+                    <p>
+                        <button type="submit" class="btn btn-info">Enregistrer l'offre</button>
+                    </p>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/client.js"></script>
+    <!--<script type="text/javascript" src="simplePeer.js"></script>
+    <script type="text/javascript" src="app.js"></script>-->
+</body>
+
+</html>
