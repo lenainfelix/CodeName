@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>CodeName</title>
+    
 </head>
 
 <body>
@@ -12,7 +13,14 @@
         <h1 class="navbar-brand text-light"> Demo </h1>
     </nav>
 
-    <div id="chat-window" class="container ">
+    <div id="registerWindow" class="container">
+        <input type="text" id="name" class="form-control d-block" placeholder="Ton Prénom" required autofocus>
+        <input type="text" id="room" class="form-control d-block" placeholder="Quel réunion?" required autofocus>
+        <button id="register" class="btn btn-lg btn-primary btn-block" type="submit">C'est parti !!</button>
+    </div>
+
+    
+    <div id="chatWindow" class="container d-none">
         <div class="d-flex justify-content-center">
             <div class="col-6">
                 <form class="form-signin">
@@ -25,18 +33,18 @@
 
                     <div id="info"></div>
                     
-                    <input type="text" id="name" class="form-control" placeholder="Ton Prénom" required autofocus>
                 
                     <input type="text" id="message" class="form-control" placeholder="Ton Message" required>
-                
                     <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Envoyer</button>
+                
                     
                 </form>
             </div>
         </div>
     </div>
+    
 
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
                 <video id="r-Video" autoplay="autoplay" src=""></video>
@@ -47,13 +55,16 @@
                 emission
             </div>
         </div>
+        <div id="participants"></div>
         <span id='displayId'></span>
+        <!--
         <input type="text" id="connectionId" class="form-control" placeholder="ID" required>
     
         <button id="connectButton" class="btn btn-lg btn-primary btn-block" type="submit">Connection</button>
         <button id="callButton" class="btn btn-lg btn-success btn-block" type="submit">Appel</button>
-        
+        -->
     </div>
+    
     <!--<div class="container">
         <div class="row">
             <div class="col-sm-6">
